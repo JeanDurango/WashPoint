@@ -3,6 +3,8 @@ import DefaultLayout from "../layout/DefaultLayout";
 import { useAuth } from "../auth/AuthProvider";
 import { Navigate } from "react-router-dom";
 import { AuthResponse, AuthResponseError } from "../types/types";
+import SignupCard from "./Signup/menu";
+
 
 export default function Login() {
   const [username, setUsername] = useState("");
@@ -49,7 +51,16 @@ export default function Login() {
   if (auth.isAuthenticated) {
     return <Navigate to="/dashboard" />;
   }
+  const Login = () => {
   return (
+    <div className="login-page">
+      {/* Aquí es donde debes colocar el componente que quieres ver */}
+      <SignupCard />
+    </div>
+  );
+};
+  return (
+    
     <DefaultLayout>
       <form onSubmit={handleSubmit} className="form">
         <h1>Login</h1>
