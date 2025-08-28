@@ -1,106 +1,93 @@
 /* Estilos para el fondo degradado y centrado */
-.signup-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh; /* Altura completa de la ventana */
-  width: 100vmax; /* Ancho completo de la ventana */
-  background: linear-gradient(239.07deg, #01897E 25.94%, #4D918B 33.53%, #C5C4C2 68.73%);
-  font-family: 'Radio Canada', sans-serif; /* Usamos una fuente genérica si no está disponible */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(239.07deg, #01897E 25.94%, #4D918B 33.53%, #C5C4C2 68.73%);
+    font-family: 'Radio Canada', sans-serif;
 }
 
 /* Tarjeta principal (Rectangle 1) */
 .card-login {
-  position: relative; /* Permite posicionar elementos hijos */
-  width: 692px;
-  height: 595px;
-  background: rgba(71, 114, 110, 0.29); /* Color con transparencia */
-  box-shadow: 5px 4px 10px 5px rgba(47, 92, 101, 0.25);
-  border-radius: 50px;
-  /* Centrado manual o con flexbox/grid */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 30px; /* Espacio entre los elementos internos */
-  padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Espacio entre los elementos */
+    width: 692px;
+    height: 595px;
+    background: rgba(71, 114, 110, 0.29);
+    box-shadow: 5px 4px 10px 5px rgba(47, 92, 101, 0.25);
+    border-radius: 50px;
+    padding: 20px;
 }
 
 /* Título de Signup */
 .signup-title {
-  position: absolute;
-  top: 50px; /* Ajuste para el posicionamiento */
-  font-weight: 500;
-  font-size: 64px;
-  line-height: 77px;
-  color: #4B4E4E;
+    /* Aquí eliminamos 'position: absolute' y 'top' */
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 77px;
+    color: #4B4E4E;
 }
 
 /* Contenedor de la imagen (melhores-lavadoras) */
 .image-container {
-  position: absolute;
-  top: 200px; /* Ajuste para el posicionamiento */
-  width: 268px;
-  height: 153px;
-  border-radius: 70px;
-  overflow: hidden; /* Para que la imagen respete el borde redondeado */
+    /* Aquí eliminamos 'position: absolute' y 'top' */
+    width: 268px;
+    height: 153px;
+    border-radius: 70px;
+    overflow: hidden;
 }
 
 .card-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Contenedor de los botones */
 .button-container {
-  position: absolute;
-  bottom: 50px; /* Ajuste para el posicionamiento */
-  display: flex;
-  justify-content: space-between;
-  width: 65%; /* Ancho para separar los botones */
+    /* Aquí eliminamos 'position: absolute' y 'bottom' */
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
 }
 
-/* Estilos para cada botón (Frame 2 y Frame 1) */
+/* Resto de estilos para los botones ... */
 .button-cliente,
 .button-proveedor {
-  width: 305px;
-  height: 74px;
-  background: #06938C;
-  border-radius: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
+    width: 250px;
+    height: 74px;
+    background: #06938C;
+    border-radius: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
 }
 
 .button-cliente:hover,
 .button-proveedor:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
-.button-link {
-  display: block; /* O flex, para centrar el texto */
-  text-align: center;
-  text-decoration: none; /* Elimina el subrayado predeterminado */
-  background-color: #06938C;;
-  color: white;
-  font-size: 2rem;
-  font-weight: 600;
-  padding: 15px 40px;
-  border-radius: 60px;
-  cursor: pointer;
-}
-/* Estilos para el texto dentro del botón */
+
 .button {
-  background: none;
-  border: none;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 32px;
-  color: #FFFFFF;
-  cursor: pointer;
-  padding: 0;
-  width: 100%;
-  height: 100%;
+    background: none;
+    border: none;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 32px;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }

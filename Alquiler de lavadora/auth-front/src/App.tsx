@@ -6,11 +6,13 @@ import './App.css';
 
 const App = () => {
   return (
-    
+    <>
+      <SignupCard />
       <Routes>
-        <Route path="/" element={<SignupCard />} />
-        <Route path="/otra-pagina" element={<SignupForm />} />
+
+        <Route path="/signup-cliente" element={<SignupForm />} />
       </Routes>
+    </>
   );
 };
 

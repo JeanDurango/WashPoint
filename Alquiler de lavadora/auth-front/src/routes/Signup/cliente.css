@@ -10,8 +10,8 @@
 
 /* Estilos para la tarjeta de registro */
 .signup-container {
-  width: 1108px;
-  height: 798px;
+  min-width: 1108px;
+  min-height: 798px;
   background: rgba(71, 114, 110, 0.29);
   box-shadow: 5px 4px 10px 5px rgba(47, 92, 101, 0.25);
   border-radius: 50px;
