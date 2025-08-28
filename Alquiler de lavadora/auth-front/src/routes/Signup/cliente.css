@@ -1,0 +1,113 @@
+/* Estilos para el contenedor principal de la página */
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(239.07deg, #01897E 25.94%, #4D918B 33.53%, #C5C4C2 68.73%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para la tarjeta de registro */
+.signup-container {
+  width: 1108px;
+  height: 798px;
+  background: rgba(71, 114, 110, 0.29);
+  box-shadow: 5px 4px 10px 5px rgba(47, 92, 101, 0.25);
+  border-radius: 50px;
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px; /* Espacio entre los elementos del formulario */
+}
+
+/* Estilos para el título "Signup cliente" */
+.signup-container h1 {
+  font-family: 'Radio Canada', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 77px;
+  color: #4B4E4E;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el formulario */
+.signup-container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Estilos para los grupos de input en una sola columna */
+.input-group {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilos para los grupos de input en fila (dos columnas) */
+.input-group-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espacio entre los inputs */
+}
+
+/* Estilos para todos los inputs */
+.signup-container input {
+  width: 522px; /* Ancho basado en tu diseño */
+  height: 76px;
+  background: #D9D9D9;
+  border-radius: 50px;
+  border: none;
+  padding: 0 30px;
+  box-sizing: border-box;
+  font-family: 'Radio Canada', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: rgba(92, 92, 92, 0.73);
+}
+
+/* Estilos específicos para el input de Nombre completo */
+.input-group input {
+  width: 1074px; /* Ancho para el input de nombre completo */
+}
+
+/* Estilos para el contenedor del botón */
+.button-container {
+  margin-top: 30px;
+}
+
+/* Estilos para el botón de envío */
+
+ .button {
+  width: 305px;
+  height: 67px;
+  background-color: #06938C;
+  border-radius: 60px;
+  border: none;
+  color: #FFFFFF;
+  font-family: 'Radio Canada', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 32px;
+  cursor: pointer;
+  transition: background 0.3s;
+   /* Centra los elementos verticalmente (si es necesario) */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.button-container .button:hover {
+  background: #057a7b;
+}

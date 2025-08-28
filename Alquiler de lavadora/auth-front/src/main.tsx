@@ -8,6 +8,7 @@ import { AuthProvider } from "./auth/AuthProvider.tsx";
 import Dashboard from "./routes/Dashboard.tsx";
 import ProtectedRoute from "./routes/ProtectedRoute.tsx";
 import Profile from "./routes/Profile.tsx";
+import SignupForm from "./routes/Signup/cliente.tsx";
 
 import "./index.css";
 
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/signup",
     element: <SignupCard />,
+  },
+  {
+    path: "/signup-cliente",
+    element: <SignupForm />,
   },
   {
     path: "/",
