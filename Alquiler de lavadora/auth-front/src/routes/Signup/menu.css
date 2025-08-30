@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     min-width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
     background: linear-gradient(239.07deg, #01897E 25.94%, #4D918B 33.53%, #C5C4C2 68.73%);
     font-family: 'Radio Canada', sans-serif;
 }
