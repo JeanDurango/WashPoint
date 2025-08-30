@@ -20,10 +20,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px; /* Espacio entre los elementos del formulario */
+  gap: 30px;
 }
 
-/* Estilos para el título "Signup cliente" */
+/* Estilos para el título "Signup Proveedor" */
 .signup-container h1 {
   font-family: 'Radio Canada', sans-serif;
   font-style: normal;
@@ -55,13 +55,14 @@
 .input-group-row {
   width: 100%;
   display: flex;
-  justify-content: center;
-  gap: 20px; /* Espacio entre los inputs */
+  justify-content: space-between; /* Espacia los elementos */
+  gap: 20px;
 }
+
 
 /* Estilos para todos los inputs */
 .signup-container input {
-  width: 522px; /* Ancho basado en tu diseño */
+  width: 522px;
   height: 76px;
   background: #D9D9D9;
   border-radius: 50px;
@@ -78,7 +79,68 @@
 
 /* Estilos específicos para el input de Nombre completo */
 .input-group input {
-  width: 1074px; /* Ancho para el input de nombre completo */
+  width: 1074px;
+}
+
+/* Contenedor del input de archivo */
+.rut-upload-wrapper {
+  width: 522px;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+
+}
+
+.rut-upload-box {
+  width: 250px;
+  height: 50px;
+  background-color: #D9D9D9;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden; /* Esto es importante para que la imagen no se desborde */
+}
+
+.rut-upload-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rut-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.rut-icon img {
+  width: 100%;
+  height: auto;
+}
+
+.rut-label {
+  font-family: 'Radio Canada', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(92, 92, 92, 0.73);
+}
+
+.rut-input {
+  display: none;
+}
+
+.rut-preview-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; 
+  border-radius: 25px; 
 }
 
 /* Estilos para el contenedor del botón */
@@ -87,8 +149,7 @@
 }
 
 /* Estilos para el botón de envío */
-
- .button {
+.button {
   width: 305px;
   height: 67px;
   background-color: #06938C;
@@ -102,11 +163,11 @@
   line-height: 32px;
   cursor: pointer;
   transition: background 0.3s;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.button-container .button:hover {
+.button:hover {
   background: #057a7b;
 }

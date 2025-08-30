@@ -5,7 +5,11 @@ import { useNavigate } from 'react-router-dom';
 const SignupCard = () => {
   const navigate = useNavigate();
   const Navegatecliente = () => {
-    navigate("/signup-cliente"); 
+    navigate("/signup-cliente");
+  };
+
+  const Navegateproveedor = () => {
+    navigate("/signup-proveedor");
   };
   return (
     <div className="signup-container">
@@ -23,7 +27,7 @@ const SignupCard = () => {
             <button onClick={Navegatecliente} className="button">Cliente</button>
           </div>
           <div className="button-proveedor">
-            <button className="button">Proveedor</button>
+            <button onClick={Navegateproveedor} className="button">Proveedor</button>
           </div>
         </div>
       </div>

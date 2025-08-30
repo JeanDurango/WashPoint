@@ -9,6 +9,7 @@ import Dashboard from "./routes/Dashboard.tsx";
 import ProtectedRoute from "./routes/ProtectedRoute.tsx";
 import Profile from "./routes/Profile.tsx";
 import SignupForm from "./routes/Signup/cliente.tsx";
+import SignupProveedor from "./routes/Signup/proveedor.tsx";
 
 import "./index.css";
 
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/signup-cliente",
     element: <SignupForm />,
+  },
+  {
+    path: "/signup-proveedor",
+    element: <SignupProveedor />,
   },
   {
     path: "/",
